@@ -9,6 +9,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+&mt { flavor = "balanced"; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -184,7 +186,7 @@
         };
 
         MouseBT {
-            display-name= "MouseBT"
+            display-name = "MouseBT";
             bindings = <
 &none   &none         &none         &none           &none         &none           &msc SCRL_LEFT   &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none      &none
 &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL     &bt BT_CLR      &msc SCRL_RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp ENTER  &none
