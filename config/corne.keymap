@@ -151,7 +151,7 @@
 
             display-name = "Colemak";
             bindings = <
-&kp TAB              &kp Q           &kp W           &kp F             &kp P         &kp B        &kp J    &kp L        &kp U              &kp Y            &kp SEMICOLON    &kp EQUAL
+&kp ESCAPE           &kp Q           &kp W           &kp F             &kp P         &kp B        &kp J    &kp L        &kp U              &kp Y            &kp SEMICOLON    &kp EQUAL
 &mt LCTRL BACKSPACE  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_SHIFT S  &mt LCTRL T   &kp G        &kp M    &mt RCTRL N  &mt RIGHT_SHIFT E  &mt RIGHT_ALT I  &mt RIGHT_GUI O  &kp SQT
 &kp MINUS            &kp Z           &kp X           &kp C             &kp D         &kp V        &kp K    &kp H        &kp COMMA          &kp DOT          &kp FSLH         &kp NON_US_BACKSLASH
                                                      &lt 3 SYSREQ      &lt 1 DELETE  &lt 2 TAB    &kp RET  &kp SPACE    &caps_word
@@ -187,10 +187,10 @@
 
             display-name = "NUM";
             bindings = <
-&trans  &none         &none         &none           &none      &none     &kp MINUS  &kp N7        &kp N8        &kp N9        &kp PLUS   &kp BSPC
+&trans  &none         &none         &none           &none      &none     &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS   &kp BSPC
 &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none     &kp ASTRK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ENTER  &kp GRAVE
 &none   &none         &none         &none           &none      &none     &kp SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none      &none
-                                    &trans          &trans     &trans    &trans     &trans        &kp N0
+                                    &trans          &trans     &trans    &trans     &trans        &kp NUMBER_0
             >;
 
             label = "2";
