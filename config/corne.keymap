@@ -98,44 +98,59 @@
             layers = <0>;
         };
 
-        numpad-period {
-            bindings = <&kp PERIOD>;
-            key-positions = <31 32>;
-            layers = <2>;
-        };
-
-        numpad-comma {
-            bindings = <&kp COMMA>;
-            key-positions = <32 33>;
-            layers = <2>;
-        };
-
         grave {
             bindings = <&kp GRAVE>;
-            key-positions = <13 25>;
+            key-positions = <17 29>;
             layers = <0>;
         };
 
         tilde {
             bindings = <&kp TILDE>;
-            key-positions = <14 26>;
-            layers = <0>;
-        };
-
-        pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <21 33>;
+            key-positions = <18 30>;
             layers = <0>;
         };
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <38 37>;
+            key-positions = <37 29>;
         };
 
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
+        prmc {
+            bindings = <&prmc>;
+            key-positions = <25 26>;
+        };
+
+        bkmc {
+            bindings = <&bkmc>;
+            key-positions = <26 27>;
+        };
+
+        bcmc {
+            bindings = <&bcmc>;
+            key-positions = <27 28>;
+        };
+    };
+
+    macros {
+        prmc: parentheses {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            label = "PARENTHESES";
+        };
+
+        bkmc: pbk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "PBK";
+        };
+
+        bcmc: bcmc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+            label = "BCMC";
         };
     };
 
@@ -157,7 +172,7 @@
                                                      &lt 3 SYSREQ      &lt 1 DELETE  &lt 2 TAB    &kp RET  &kp SPACE    &caps_word
             >;
 
-            label = "0";
+            label = "Colemak";
         };
 
         NavFunc {
@@ -175,7 +190,7 @@
                                                 &trans             &trans        &trans     &trans         &trans          &none
             >;
 
-            label = "1";
+            label = "NavFunc";
         };
 
         Numpad {
@@ -187,13 +202,13 @@
 
             display-name = "NUM";
             bindings = <
-&trans  &none         &none         &none           &none      &none     &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS   &kp BSPC
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none     &kp ASTRK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ENTER  &kp GRAVE
-&none   &none         &none         &none           &none      &none     &kp SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none      &none
+&trans  &none         &none         &none           &none      &none     &kp MINUS  &kp NUMBER_7  &kp NUMBER_8         &kp NUMBER_9        &kp PLUS   &kp BSPC
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none     &kp ASTRK  &kp NUMBER_4  &kp NUMBER_5         &kp NUMBER_6        &kp ENTER  &kp GRAVE
+&none   &none         &none         &none           &none      &none     &kp SLASH  &kp NUMBER_1  &mt PERIOD NUMBER_2  &mt COMMA NUMBER_3  &none      &none
                                     &trans          &trans     &trans    &trans     &trans        &kp NUMBER_0
             >;
 
-            label = "2";
+            label = "Numpad";
         };
 
         MouseBT {
@@ -205,7 +220,7 @@
                                     &trans          &trans        &trans          &trans           &trans          &none
             >;
 
-            label = "3";
+            label = "MouseBT";
         };
     };
 };
