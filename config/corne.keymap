@@ -119,16 +119,26 @@
 
         prmc {
             bindings = <&prmc>;
-            key-positions = <25 26>;
+            key-positions = <31 32>;
         };
 
         bkmc {
             bindings = <&bkmc>;
-            key-positions = <26 27>;
+            key-positions = <32 33>;
         };
 
         bcmc {
             bindings = <&bcmc>;
+            key-positions = <33 34>;
+        };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <26 27>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
             key-positions = <27 28>;
         };
     };
@@ -168,10 +178,10 @@
 
             display-name = "Colemak";
             bindings = <
-&kp ESCAPE           &kp Q           &kp W           &kp F             &kp P         &kp B        &kp J    &kp L        &kp U              &kp Y            &kp SEMICOLON    &kp EQUAL
-&mt LCTRL BACKSPACE  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_SHIFT S  &mt LCTRL T   &kp G        &kp M    &mt RCTRL N  &mt RIGHT_SHIFT E  &mt RIGHT_ALT I  &mt RIGHT_GUI O  &kp SQT
-&kp MINUS            &kp Z           &kp X           &kp C             &kp D         &kp V        &kp K    &kp H        &kp COMMA          &kp DOT          &kp FSLH         &kp NON_US_BACKSLASH
-                                                     &lt 3 SYSREQ      &lt 1 DELETE  &lt 2 TAB    &kp RET  &kp SPACE    &caps_word
+&kp ESCAPE     &kp Q           &kp W           &kp F             &kp P         &kp B        &kp J    &kp L        &kp U              &kp Y            &kp SEMICOLON    &kp EQUAL
+&kp BACKSPACE  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_SHIFT S  &mt LCTRL T   &kp G        &kp M    &mt RCTRL N  &mt RIGHT_SHIFT E  &mt RIGHT_ALT I  &mt RIGHT_GUI O  &kp SQT
+&kp MINUS      &kp Z           &kp X           &kp C             &kp D         &kp V        &kp K    &kp H        &kp COMMA          &kp DOT          &kp FSLH         &kp NON_US_BACKSLASH
+                                               &kp SYSREQ        &lt 1 DELETE  &lt 2 TAB    &kp RET  &kp SPACE    &caps_word
             >;
 
             label = "Colemak";
