@@ -120,26 +120,42 @@
         prmc {
             bindings = <&prmc>;
             key-positions = <31 32>;
+            layers = <0>;
         };
 
         bkmc {
             bindings = <&bkmc>;
             key-positions = <32 33>;
+            layers = <0>;
         };
 
         bcmc {
             bindings = <&bcmc>;
             key-positions = <33 34>;
+            layers = <0>;
         };
 
         copy {
             bindings = <&kp LC(C)>;
             key-positions = <26 27>;
+            layers = <0>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
             key-positions = <27 28>;
+            layers = <0>;
+        };
+
+        new-tab {
+            bindings = <&kp LC(T)>;
+            key-positions = <16 17>;
+            layers = <0>;
+        };
+
+        open-tab {
+            bindings = <&kp LC(LS(T))>;
+            key-positions = <17 16 15>;
         };
     };
 
