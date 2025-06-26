@@ -13,6 +13,11 @@
 
 &mt { flavor = "balanced"; };
 
+&caps_word {
+    mods = <(MOD_LSFT)>;
+    continue-list = <UNDERSCORE BACKSPACE DELETE MINUS>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
