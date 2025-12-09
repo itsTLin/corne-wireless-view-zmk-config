@@ -247,10 +247,10 @@
 
             display-name = "Numpad";
             bindings = <
-&trans  &none         &none         &none           &none      &none     &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS   &kp BSPC
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none     &kp ASTRK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ENTER  &kp COLON
-&none   &none         &none         &none           &none      &none     &kp SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp TAB    &none
-                                    &trans          &trans     &trans    &trans     &trans        &kp NUMBER_0
+&trans  &kp F1           &kp F2           &kp F3             &kp F4        &kp F5     &kp MINUS  &kp NUMBER_7        &kp NUMBER_8        &kp NUMBER_9            &kp PLUS             &kp BSPC
+&trans  &mt LEFT_GUI F6  &mt LEFT_ALT F7  &mt LEFT_SHIFT F8  &mt LCTRL F9  &kp F10    &kp ASTRK  &mt RCTRL NUMBER_4  &mt RIGHT_SHIFT N5  &mt RIGHT_ALT NUMBER_6  &mt RIGHT_WIN ENTER  &kp COLON
+&none   &none            &none            &none              &kp F11       &kp F12    &kp SLASH  &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3            &kp TAB              &none
+                                          &trans             &trans        &trans     &trans     &trans              &kp NUMBER_0
             >;
 
             label = "Numpad";
@@ -261,11 +261,29 @@
             bindings = <
 &none   &none         &none         &none           &none         &none           &msc SCRL_LEFT   &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none      &none
 &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL     &bt BT_CLR      &msc SCRL_RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp ENTER  &none
-&none   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &none            &mkp MB1        &mkp MB2        &mkp MB3         &mkp MB4   &mkp MB5
-                                    &trans          &trans        &trans          &trans           &trans          &none
+&none   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &none            &mkp MB4        &mkp MB5        &mkp MB3         &none      &none
+                                    &trans          &trans        &trans          &mkp MB1         &mkp MB2        &none
             >;
 
             label = "MouseBT";
+        };
+
+        Gaming {
+            bindings = <
+&kp TAB    &kp T      &kp Q  &kp W   &kp E   &kp R        &trans  &kp F5  &kp F9  &kp F11  &trans  &trans
+&kp LCTRL  &kp LSHFT  &kp A  &kp S   &kp D   &kp F        &trans  &trans  &trans  &trans   &trans  &trans
+&kp N      &kp I      &kp Z  &kp X   &kp C   &kp V        &trans  &trans  &trans  &trans   &trans  &trans
+                             &trans  &trans  &kp SPACE    &trans  &trans  &trans
+            >;
+        };
+
+        League {
+            bindings = <
+&kp TAB  &kp N1  &kp N2  &kp N3  &kp N4     &kp N5       &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp Q   &kp W   &kp E   &kp R      &kp N6       &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp A   &kp S   &kp D   &kp F      &kp N7       &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &kp SPACE  &kp LCTRL    &trans  &trans  &trans
+            >;
         };
     };
 };
