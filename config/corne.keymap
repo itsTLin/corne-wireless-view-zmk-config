@@ -194,7 +194,7 @@
         };
 
         ToLeague {
-            bindings = <&to 5>;
+            bindings = <&to 6>;
             key-positions = <38 40>;
             layers = <0>;
         };
@@ -208,7 +208,7 @@
         FromLeague {
             bindings = <&to 0>;
             key-positions = <38 40>;
-            layers = <5>;
+            layers = <6>;
         };
     };
 
@@ -306,10 +306,19 @@
 
         Game {
             bindings = <
-&mt TAB ESCAPE  &kp T      &kp Q  &kp W   &kp E         &kp R        &trans  &kp F5  &kp F9  &kp F11  &trans  &trans
-&kp LCTRL       &kp LSHFT  &kp A  &kp S   &kp D         &kp F        &trans  &trans  &trans  &trans   &trans  &trans
-&kp N           &kp I      &kp Z  &kp X   &kp C         &kp V        &trans  &trans  &trans  &trans   &trans  &trans
-                                  &trans  &kp LEFT_ALT  &kp SPACE    &trans  &trans  &trans
+&mt TAB ESCAPE  &kp T      &kp Q  &kp W         &kp E  &kp R        &trans  &kp F5  &kp F9  &kp F11  &trans  &trans
+&kp LCTRL       &kp LSHFT  &kp A  &kp S         &kp D  &kp F        &trans  &trans  &trans  &trans   &trans  &trans
+&kp N           &kp I      &kp Z  &kp X         &kp C  &kp V        &trans  &trans  &trans  &trans   &trans  &trans
+                                  &kp LEFT_ALT  &mo 5  &kp SPACE    &trans  &trans  &trans
+            >;
+        };
+
+        GameNum {
+            bindings = <
+&kp TAB    &trans     &kp NUMBER_1  &kp N2  &kp N3  &kp N4    &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans
+&kp LCTRL  &kp LSHFT  &kp N5        &kp N6  &kp N7  &kp N8    &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans
+&trans     &trans     &trans        &trans  &kp N9  &kp N0    &kp F11  &kp F12  &trans  &trans  &trans   &trans
+                                    &trans  &trans  &trans    &trans   &trans   &trans
             >;
         };
 
