@@ -186,30 +186,6 @@
             key-positions = <5 17>;
             layers = <4>;
         };
-
-        ToGame {
-            bindings = <&to 4>;
-            key-positions = <38 39>;
-            layers = <0>;
-        };
-
-        ToLeague {
-            bindings = <&to 6>;
-            key-positions = <38 40>;
-            layers = <0>;
-        };
-
-        FromGame {
-            bindings = <&to 0>;
-            key-positions = <38 39>;
-            layers = <4>;
-        };
-
-        FromLeague {
-            bindings = <&to 0>;
-            key-positions = <38 40>;
-            layers = <6>;
-        };
     };
 
     macros {
@@ -265,8 +241,8 @@
 
             display-name = "NavFunc";
             bindings = <
-&trans  &none         &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP     &none     &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &kp INSERT  &none
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT     &kp LCTRL           &none     &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp ENTER   &none
+&trans  &none         &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP     &none     &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &kp INSERT  &to 4
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT     &kp LCTRL           &none     &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp ENTER   &to 6
 &none   &none         &kp C_PREV    &kp C_PLAY         &kp C_FAST_FORWARD  &none     &none          &none     &none         &none      &none       &none
                                     &trans             &trans              &trans    &trans         &trans    &none
             >;
@@ -306,7 +282,7 @@
 
         Game {
             bindings = <
-&mt TAB ESCAPE  &kp T      &kp Q  &kp W         &kp E  &kp R        &trans  &kp F5  &kp F9  &kp F11  &trans  &trans
+&mt TAB ESCAPE  &kp T      &kp Q  &kp W         &kp E  &kp R        &to 0   &kp F5  &kp F9  &kp F11  &trans  &trans
 &kp LCTRL       &kp LSHFT  &kp A  &kp S         &kp D  &kp F        &trans  &trans  &trans  &trans   &trans  &trans
 &kp N           &kp I      &kp Z  &kp X         &kp C  &kp V        &trans  &trans  &trans  &trans   &trans  &trans
                                   &kp LEFT_ALT  &mo 5  &kp SPACE    &trans  &trans  &trans
@@ -324,10 +300,10 @@
 
         League {
             bindings = <
-&kp TAB  &kp N1  &kp N2  &kp N3  &kp N4     &kp N5       &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp Q   &kp W   &kp E   &kp R      &kp N6       &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp A   &kp S   &kp D   &kp F      &kp N7       &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &kp LCTRL  &kp SPACE    &trans  &trans  &trans
+&kp TAB  &kp N1  &kp N2  &kp N3  &kp N4     &kp N5       &to 0   &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
+&trans   &kp Q   &kp W   &kp E   &kp R      &kp N6       &trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
+&trans   &kp A   &kp S   &kp D   &kp F      &kp N7       &trans  &kp F11  &kp F12  &trans  &trans  &trans
+                         &trans  &kp LCTRL  &kp SPACE    &trans  &trans   &trans
             >;
         };
     };
